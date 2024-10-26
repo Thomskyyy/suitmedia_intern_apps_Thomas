@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Screen1">
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="384dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="304dp"
+        android:fontFamily="@font/poppins_medium"
+        android:background="@drawable/textstyling"
+        android:hint="Name"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHint="#A9A9A9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/palindromeEditText"
+        android:layout_width="390dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/textstyling"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Palindrome"
+        android:textColor="#000000"
+        android:textColorHint="#A9A9A9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameEditText" />
+
+    <Button
+        android:id="@+id/checkButton"
+        android:layout_width="365dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/buttonstyling"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/poppins_medium"
+        android:text="CHECK"
+        android:textSize="14sp"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/palindromeEditText" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="365dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/buttonstyling"
+        android:fontFamily="@font/poppins_medium"
+        android:text="NEXT"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
